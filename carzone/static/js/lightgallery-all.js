@@ -3287,6 +3287,8 @@
             twitterDropdownText: 'Twitter',
             googlePlus: true,
             googlePlusDropdownText: 'GooglePlus',
+            instagram: true,
+            instagramDropdownText: 'instagram',
             pinterest: true,
             pinterestDropdownText: 'Pinterest'
         };
@@ -3310,6 +3312,7 @@
             shareHtml += _this.core.s.facebook ? '<li><a id="lg-share-facebook" target="_blank"><span class="lg-icon"></span><span class="lg-dropdown-text">' + this.core.s.facebookDropdownText + '</span></a></li>' : '';
             shareHtml += _this.core.s.twitter ? '<li><a id="lg-share-twitter" target="_blank"><span class="lg-icon"></span><span class="lg-dropdown-text">' + this.core.s.twitterDropdownText + '</span></a></li>' : '';
             shareHtml += _this.core.s.googlePlus ? '<li><a id="lg-share-googleplus" target="_blank"><span class="lg-icon"></span><span class="lg-dropdown-text">' + this.core.s.googlePlusDropdownText + '</span></a></li>' : '';
+            shareHtml += _this.core.s.instagram ? '<li><a id="lg-share-instagram" target="_blank"><span class="lg-icon"></span><span class="lg-dropdown-text">' + this.core.s.instagramDropdownText + '</span></a></li>' : '';
             shareHtml += _this.core.s.pinterest ? '<li><a id="lg-share-pinterest" target="_blank"><span class="lg-icon"></span><span class="lg-dropdown-text">' + this.core.s.pinterestDropdownText + '</span></a></li>' : '';
             shareHtml += '</ul></span>';
 
@@ -3332,6 +3335,8 @@
                     $('#lg-share-twitter').attr('href', 'https://twitter.com/intent/tweet?text=' + _this.getSahreProps(index, 'tweetText') + '&url=' + (encodeURIComponent(_this.getSahreProps(index, 'twitterShareUrl') || window.location.href)));
 
                     $('#lg-share-googleplus').attr('href', 'https://plus.google.com/share?url=' + (encodeURIComponent(_this.getSahreProps(index, 'googleplusShareUrl') || window.location.href)));
+
+                    $('#lg-share-instagram').attr('href', 'https://instagram.com/share?url=' + (encodeURIComponent(_this.getSahreProps(index, 'instagramShareUrl') || window.location.href)));
 
                     $('#lg-share-pinterest').attr('href', 'http://www.pinterest.com/pin/create/button/?url=' + (encodeURIComponent(_this.getSahreProps(index, 'pinterestShareUrl') || window.location.href)) + '&media=' + encodeURIComponent(_this.getSahreProps(index, 'src')) + '&description=' + _this.getSahreProps(index, 'pinterestText'));
 
