@@ -62,6 +62,9 @@ ul {
 .google:hover {
     color: #dc4e41 !important;
 }
+.instagram:hover {
+    color: #dc4e41 !important;
+}
 
 .rss:hover {
     color: #e78733 !important;
@@ -86,7 +89,10 @@ ul {
     background: #db4437;
     color: #fff;
 }
-
+.instagram-bg {
+    background: #db4437;
+    color: #fff;
+}
 .linkedin-bg {
     background: #0177b5;
     color: #fff;
@@ -118,6 +124,10 @@ ul {
 }
 
 .google-bg:hover {
+    background: #dc4e41;
+    color: #fff;
+}
+.instagram-bg:hover {
     background: #dc4e41;
     color: #fff;
 }
@@ -3342,6 +3352,10 @@ input[type=checkbox]:checked + label:before {
     background: #dc4e41!important;
 }
 
+.team-1 .instagram-bg:hover {
+    background: #dc4e41!important;
+}
+
 .our-team-2{
     background: rgba(0, 0, 0, 0.04) url(../img/bg-img-6.jpg) top left repeat;
     background-size: cover;
@@ -3443,6 +3457,10 @@ input[type=checkbox]:checked + label:before {
 }
 
 .team-2 .google-bg:hover {
+    background: #dc4e41!important;
+}
+
+.team-2 .instagram-bg:hover {
     background: #dc4e41!important;
 }
 
@@ -3927,6 +3945,10 @@ footer {
 }
 
 .footer .google-bg:hover {
+    background: #dc4e41!important;
+}
+
+.footer .instagram-bg:hover {
     background: #dc4e41!important;
 }
 
@@ -5787,6 +5809,14 @@ footer {
     background: #c3291c;
 }
 
+.contact-section .instagram-bg {
+    background: #db4437;
+    color: #fff;
+}
+
+.contact-section .instagram-i {
+    background: #c3291c;
+}
 .contact-section .facebook-i {
     background: #3b589e;
 }
